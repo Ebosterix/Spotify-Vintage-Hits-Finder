@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import SearchBar from '../Search/SearchBar';
+import SearchBar from '../SearchBar';
 
 
 
@@ -32,9 +32,10 @@ class TrackList extends Component {
               <div>
             
                 <h4>Track Name:</h4>{track.name}
-                <h4>Release Date:</h4>{track.release_date}
                 <h4> Artist:</h4>{track.artists.map(artist =>
                   <p>{artist.name}</p>
+                  
+
                 )}
 
               </div>

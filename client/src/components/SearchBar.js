@@ -23,7 +23,7 @@ class SearchBar extends React.Component {
     return (
       <div>
         <input type="text" name="" id="" placeholder="Search ..." onChange={this.searchHandler} value={this.state.searchTerm} />
-        <button onClick={this.clickHandler}>Submit1</button>
+        <button onClick={this.clickHandler}>Submit</button>
       </div>
     )
   }

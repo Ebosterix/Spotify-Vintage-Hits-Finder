@@ -1,51 +1,36 @@
 
-.body {
-  position: auto;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #ce4f4f;
+* {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-
-}
-
-
-
-.App {
-  text-align: center;
-  background-color: green;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
  
-
 
 }
 
 .nav-style
 {
-  height: 70px;
+  height: 80px;
   display: flex;
-  overflow: hidden;
-  background-color: hsl(151, 96%, 9%);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
-  justify-content: space-between; 
-  width: 100%;
-  top: 0;
-  left: 0;
-  flex-wrap: wrap;
-}
-
-
-a {
-  text-decoration: none;
-}
-
-/*{
-  background-color: rgb(207, 199, 161);
-
+  background-color: hsl(278, 89%, 18%);
+  justify-content: center;
+  align-items: center; 
   
-}*/
+ 
+}
 
-ul {
-  list-style-type: none;
-  flex-direction: space-around;
-  display: flex;
+
+.nav-items{
+display: grid;
+grid-gap: 20px;
+list-style: none;
+grid-template-columns: repeat(5, auto);
+font-size: 1.2rem;
+justify-content: end;
+margin-right: 2rem;
+width: 70vw;
+text-align: center;
+
 
 }
+
