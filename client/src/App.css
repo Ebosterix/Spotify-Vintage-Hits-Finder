@@ -1,26 +1,37 @@
 
 * {
   box-sizing: border-box;
-  padding: 0;
+  padding-top: 0;
   margin: 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
- 
+  font-family: 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  
+  
 
+}
+
+
+.cardWrapper{
+  display: flex;
+  justify-content: center;
 }
 
 .nav-style
 {
+  
   height: 80px;
   display: flex;
-  background-color: hsl(278, 89%, 18%);
+  background-color: rgb(247, 3, 206);
   justify-content: center;
   align-items: center; 
-  
+
  
+  
 }
 
 
-.nav-items{
+.nav-items {
 display: grid;
 grid-gap: 20px;
 list-style: none;
@@ -33,4 +44,58 @@ text-align: center;
 
 
 }
+
+.nav-items a {
+  color: #ffff;
+
+}
+
+
+
+.signup {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url("./components/Vintagebg2.jpg");
+  background-size: contain;
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+  color: white;
+  background-color:#070707;
+
+}
+.signup input {
+  margin : 10px;
+}
+
+.signup p{
+  display: flex;
+  margin-top: 1rem; 
+  margin-bottom: 3rem; 
+  font-size: 25px;
+  
+}
+
+.searchBar {
+  
+  align-items: center;
+  margin-top: 10rem; 
+  display: flex;
+  justify-content: center;
+}
+
+.searchButton{
+  background-color:  rgb(247, 3, 206);
+}
+.title {
+  padding-top: 200px;
+}
+/*.signup p{
+  display: flex;
+  margin-top: 10rem; 
+  margin-left: 10rem; 
+  margin-right: 10rem; 
+  text-align: center;
+}*/
 

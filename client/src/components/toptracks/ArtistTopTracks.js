@@ -25,15 +25,19 @@ class ArtistTopTracks extends Component {
   render() {
     return (
       <div>
-        <SearchBar changeSearch={this.getArtistTopTracks}></SearchBar>
+        <SearchBar changeSearch={this.getArtistTopTracks} buttonTitle="top tracks"></SearchBar>
         <div style={{ width: '60%', float: "left" }}>
           {this.state.listOfTracks.map(track => {
             return (
               <div>
                 <h4>Track Name:</h4>{track.name}
                 <h4> Artist:</h4>{track.artists.map(artist =>
-                  <p>{artist.name}</p>
+                  <div>
+                    <p>{artist.name}</p>
+                  </div>
                 )}
+                <p><img src={track.album.images[0] ? track.album.images[0].url : "https://images.app.goo.gl/DNbVmWNmwLvop7Lr6"} alt="" /></p>
+
 
               </div>
             )
