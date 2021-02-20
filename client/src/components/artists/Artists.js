@@ -27,7 +27,7 @@ class Artists extends Component {
   render() {
     return (
       <div>
-        <SearchBar changeSearch={this.getArtists} buttonTitle="search artists"></SearchBar>
+        <SearchBar changeSearch={this.getArtists} buttonTitle="Artists"></SearchBar>
         <div style={{ width: '60%', float: "left" }}>
           {this.state.listOfArtists.map(artists => {
             console.log(artists.images)

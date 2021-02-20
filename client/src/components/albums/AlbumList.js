@@ -28,7 +28,7 @@ class AlbumList extends Component {
   render() {
     return (
       <div className="albumSearch">
-        <SearchBar changeSearch={this.getAlbums} buttonTitle="search album"></SearchBar>
+        <SearchBar changeSearch={this.getAlbums} buttonTitle="Albums"></SearchBar>
         <div>
           {this.state.listOfAlbums.map(album => {
             return (

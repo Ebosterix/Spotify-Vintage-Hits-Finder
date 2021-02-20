@@ -37,6 +37,16 @@ router.get('/find-albums/:albumTitle', (req, res, next) => {
     })
 });
 
+router.get('/find-albums-by-artistname/:artistname', (req, res, next) => {
+  spotifyApi
+    .searchAlbums('year:1940-2015 artist:' + req.params.artistname)
+    .then(data => {
+      console.log('The received data from the API: ', data.body);
+
+      res.json(data)
+    })
+});
+
 
 // /api/find-artist
 router.get('/find-artists/:artistName', (req, res, next) => {

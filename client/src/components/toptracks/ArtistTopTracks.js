@@ -25,7 +25,7 @@ class ArtistTopTracks extends Component {
   render() {
     return (
       <div>
-        <SearchBar changeSearch={this.getArtistTopTracks} buttonTitle="top tracks"></SearchBar>
+        <SearchBar changeSearch={this.getArtistTopTracks} buttonTitle="Top Tracks"></SearchBar>
         <div style={{ width: '60%', float: "left" }}>
           {this.state.listOfTracks.map(track => {
             return (

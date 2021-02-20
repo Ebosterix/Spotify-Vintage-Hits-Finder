@@ -25,7 +25,7 @@ class TrackList extends Component {
   render() {
     return (
       <div>
-        <SearchBar changeSearch={this.getAllTracks} buttonTitle="search track"></SearchBar>
+        <SearchBar changeSearch={this.getAllTracks} buttonTitle="Track List"></SearchBar>
         <div style={{ width: '60%', float: "left" }}>
           {this.state.listOfTracks.map(track => {
             return (
